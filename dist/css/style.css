@@ -70,3 +70,28 @@ li {
 .text-primary {
   color: var(--primary-color);
 }
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  #main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #main-nav .toggle {
+    display: none;
+  }
+
+  #main-nav ul {
+    display: flex;
+    padding: 1rem;
+    width: 60%;
+    text-align: right;
+  }
+
+  #main-nav li {
+    border: none;
+    padding: 0;
+  }
+}
