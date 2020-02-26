@@ -66,3 +66,7 @@ li {
 #main-nav .active {
   display: block;
 }
+
+.text-primary {
+  color: var(--primary-color);
+}
