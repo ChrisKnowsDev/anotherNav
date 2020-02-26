@@ -1,11 +1,68 @@
 /* css vars */
 :root {
-
+  --dark-color: #010a43;
+  --primary-color: #ff2e63;
+  --secondary-color: #ff9d9d;
+  --light-color: #ffc2c2;
 }
 
 /* base styles */
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
  font-family: 'Spartan';
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* nav */
+#main-nav {
+  background:var(--dark-color);
+  color: var(--light-color);
+  padding: 1rem;
+}
+
+#main-nav i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#main-nav a {
+  color: var(--light-color);
+  transition: all 0.3s ease-in-out;
+}
+
+#main-nav a:hover {
+  color: var(--secondary-color);
+  letter-spacing: 4px;
+}
+
+#main-nav ul {
+  text-align: center;
+  padding: 2rem;
+  display: none;
+}
+
+#main-nav li {
+  margin: 1rem auto;
+  padding: 1rem 0;
+  border-bottom: 1px dotted var(--light-color);
+  width: 60%;
+}
+
+/* utility */
+#main-nav .active {
+  display: block;
 }
